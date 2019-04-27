@@ -17,6 +17,7 @@ void castFloatToInt(void);
 
 // conditionalOperators.m
 float calculate(NSInteger number1, char operator, NSInteger number2);
+void compareTwoStrings(NSString *firstString, NSString *secondString);
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
@@ -27,6 +28,7 @@ int main(int argc, const char * argv[]) {
     //NSLog(@"%f", sum);
     //float divide = calculate(12345, '/', 23);
     //NSLog(@"%f", divide);
+    //compareTwoStrings(@"String", @"String");
   }
   return 0;
 }

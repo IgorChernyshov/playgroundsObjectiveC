@@ -36,3 +36,17 @@ float calculate(NSInteger number1, char operator, NSInteger number2)
       break;
   }
 }
+
+BOOL areStringsEqual(NSString *firstString, NSString *secondString)
+{
+  return [firstString isEqualToString:secondString];
+}
+
+void compareTwoStrings(NSString *firstString, NSString *secondString)
+{
+  if (areStringsEqual(firstString, secondString)) {
+    NSLog(@"Strings are equal");
+  } else {
+    NSLog(@"Strings are not equal");
+  }
+}
