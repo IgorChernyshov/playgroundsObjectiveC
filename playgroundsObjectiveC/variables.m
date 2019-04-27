@@ -10,7 +10,7 @@
 
 #define MAGICALNUMBER 10
 
-void declareVariables (void)
+void declareVariables()
 {
   int intValue = 1;
   char *charValue = "kindaChar";
@@ -36,7 +36,7 @@ void declareVariables (void)
   NSLog(@"%@", string);
 }
 
-void declareConst (void)
+void declareConst()
 {
   NSString * const immutableString = @"This is an immutable string";
   // Can't do: immutableString = @"Changed string";
@@ -46,7 +46,7 @@ void declareConst (void)
   NSLog(@"%ld", (long)integer);
 }
 
-void castFloatToInt (void)
+void castFloatToInt()
 {
   float someFloat = 20.999;
   int intFromFloat = (int)someFloat;
