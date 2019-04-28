@@ -19,6 +19,12 @@ void castFloatToInt(void);
 float calculate(NSInteger number1, char operator, NSInteger number2);
 void compareTwoStrings(NSString *firstString, NSString *secondString);
 
+// loopsAndStructures.m
+void createArrays(void);
+void createDictionaries(void);
+void createSets(void);
+void pointersAndValues(void);
+
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     //declareVariables();
@@ -29,6 +35,10 @@ int main(int argc, const char * argv[]) {
     //float divide = calculate(12345, '/', 23);
     //NSLog(@"%f", divide);
     //compareTwoStrings(@"String", @"String");
+    //createArrays();
+    //createDictionaries();
+    //createSets();
+    pointersAndValues();
   }
   return 0;
 }
