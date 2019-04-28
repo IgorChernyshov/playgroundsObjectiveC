@@ -8,7 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
-// MARK: - Structures
+// MARK: - Loops
+
+void forLoops()
+{
+  NSArray *array = @[@1, @2, @3];
+  // preferable
+  for (NSNumber *number in array) {
+    NSLog(@"%@", number);
+  }
+  // unsafe
+  for (int i = 0; i < 4; i++) {
+    NSLog(@"%d", i);
+  }
+}
+
+// MARK: - Data types
 
 void createArrays()
 {
@@ -68,3 +83,49 @@ void pointersAndValues()
   pointer = &magicalNumber;
   NSLog(@"Pointer points to value of magicalNumber %d", *pointer);
 }
+
+// MARK: - Structures
+
+// Structs
+struct Coordinate {
+  float x;
+  float y;
+  float z;
+};
+typedef struct Coordinate Coordinate;
+
+/*
+ Coordinate coordinate;
+ coordinate.x = 10.0;
+ coordinate.y = 5.0;
+ coordinate.z = -1.0;
+-- OR --
+ Coordinate coordinate = { 10.0, 5.0, -1.0 };
+*/
+
+// Enums
+enum Color {
+  Red,
+  Green,
+  Blue
+};
+typedef enum Color Color;
+
+/*
+ Color color = Blue;
+ if (color == Blue) {
+   return [UIColor blueColor];
+ }
+ */
+
+enum Speed {
+  LowSpeed = 1,
+  NormalSpeed = 2,
+  HighSpeed = 3
+};
+typedef NSInteger Speed;
+
+ /*
+ Speed speedLevel = LowSpeed;
+ NSLog(@"Speed - %li", (long)speedLevel);
+ */
