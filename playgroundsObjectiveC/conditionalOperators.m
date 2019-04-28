@@ -8,26 +8,39 @@
 
 #import <Foundation/Foundation.h>
 
-float calculate(NSInteger number1, char operator, NSInteger number2)
+enum Operator {
+  Plus,
+  Minus,
+  Multiply,
+  Divide,
+  Mod
+};
+typedef enum Operator Operator;
+
+float calculate(NSInteger number1, Operator operator, NSInteger number2)
 {
   switch (operator) {
-    case '+':
+    case Plus:
       return number1 + number2;
       break;
-    case '-':
+    case Minus:
       return number1 - number2;
       break;
-    case '*':
+    case Multiply:
       return number1 * number2;
       break;
-    case '/':
+    case Divide:
       if (number2 == 0) {
         NSLog(@"You cannot divide by zero");
         return 0.0;
       }
       return (float)number1 / number2;
       break;
-    case '%':
+    case Mod:
+      if (number2 == 0) {
+        NSLog(@"You cannot divide by zero");
+        return 0.0;
+      }
       return number1 % number2;
       break;
     default:

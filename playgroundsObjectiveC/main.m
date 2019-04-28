@@ -16,7 +16,16 @@ void declareConst(void);
 void castFloatToInt(void);
 
 // conditionalOperators.m
-float calculate(NSInteger number1, char operator, NSInteger number2);
+enum Operator {
+  Plus,
+  Minus,
+  Multiply,
+  Divide,
+  Mod
+};
+typedef enum Operator Operator;
+
+float calculate(NSInteger number1, Operator operator, NSInteger number2);
 void compareTwoStrings(NSString *firstString, NSString *secondString);
 
 // loopsAndStructures.m
@@ -24,21 +33,23 @@ void createArrays(void);
 void createDictionaries(void);
 void createSets(void);
 void pointersAndValues(void);
+void forLoops(void);
 
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     //declareVariables();
     //declareConst();
     //castFloatToInt();
-    //float sum = calculate(10, '+', 15);
-    //NSLog(@"%f", sum);
-    //float divide = calculate(12345, '/', 23);
-    //NSLog(@"%f", divide);
+    float sum = calculate(10, Plus, 15);
+    NSLog(@"%f", sum);
+    float divide = calculate(12345, Divide, 23);
+    NSLog(@"%f", divide);
     //compareTwoStrings(@"String", @"String");
     //createArrays();
     //createDictionaries();
     //createSets();
-    pointersAndValues();
+    //pointersAndValues();
+    //forLoops();
   }
   return 0;
 }
