@@ -23,7 +23,7 @@ void forLoops()
   }
 }
 
-// MARK: - Data types
+// MARK: - Collections
 
 void createArrays()
 {

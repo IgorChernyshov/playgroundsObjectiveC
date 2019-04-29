@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Properties.h"
 
 // MARK: - Methods declarations
 
@@ -40,16 +41,19 @@ int main(int argc, const char * argv[]) {
     //declareVariables();
     //declareConst();
     //castFloatToInt();
-    float sum = calculate(10, Plus, 15);
-    NSLog(@"%f", sum);
-    float divide = calculate(12345, Divide, 23);
-    NSLog(@"%f", divide);
+    //float sum = calculate(10, Plus, 15);
+    //NSLog(@"%f", sum);
+    //float divide = calculate(12345, Divide, 23);
+    //NSLog(@"%f", divide);
     //compareTwoStrings(@"String", @"String");
     //createArrays();
     //createDictionaries();
     //createSets();
     //pointersAndValues();
     //forLoops();
+    Properties *testingProperties = [Properties new];
+    testingProperties.name = @"Igor";
+    NSLog(@"%@", testingProperties.name);
   }
   return 0;
 }
