@@ -34,6 +34,7 @@
 		9C22CF0A2274844300E5A3D6 /* loopsAndStructures.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loopsAndStructures.m; sourceTree = "<group>"; };
 		9C22CF0C2277118100E5A3D6 /* Properties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Properties.h; sourceTree = "<group>"; };
 		9C22CF0D2277118100E5A3D6 /* Properties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Properties.m; sourceTree = "<group>"; };
+		9C22CF0F22773AF600E5A3D6 /* SampleProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SampleProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				9C22CEFA2272256400E5A3D6 /* main.m */,
 				9C22CF0C2277118100E5A3D6 /* Properties.h */,
 				9C22CF0D2277118100E5A3D6 /* Properties.m */,
+				9C22CF0F22773AF600E5A3D6 /* SampleProtocol.h */,
 				9C22CF0A2274844300E5A3D6 /* loopsAndStructures.m */,
 				9C22CF042274438800E5A3D6 /* variables.m */,
 				9C22CF0822746AE800E5A3D6 /* conditionalOperators.m */,
