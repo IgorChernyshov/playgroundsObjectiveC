@@ -37,6 +37,12 @@ void createSets(void);
 void pointersAndValues(void);
 void forLoops(void);
 
+// blocks.m
+void captureValueBlock(void);
+void captureReferenceBlock(void);
+void capturePrimitivesReferenceBlock(void);
+void createSeveralBlocks(void);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //declareVariables();
@@ -75,6 +81,10 @@ int main(int argc, const char * argv[]) {
         //[propertiesHolder createAndSetWeakARCObject];
         //NSLog(@"Destroying propertiesHolder...");
         //propertiesHolder = nil;
+        captureValueBlock();
+        capturePrimitivesReferenceBlock();
+        captureReferenceBlock();
+        createSeveralBlocks();
     }
     return 0;
 }
