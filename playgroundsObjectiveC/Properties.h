@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "SampleProtocol.h"
+#import "ARCObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -34,6 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 // Requires initialization, for example in init
 @property(nonatomic, strong) NSMutableArray<NSString *> *employees;
+
+// ARC tests
+@property(nonatomic, strong) ARCObject *object;
+@property(nonatomic, weak) ARCObject *weakObject;
+
+- (void)createAndSetARCObject;
+- (void)createAndSetWeakARCObject;
 
 @end
 

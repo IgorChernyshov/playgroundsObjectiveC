@@ -35,4 +35,14 @@
     NSLog(@"My name is %@", self.name);
 }
 
+- (void)createAndSetARCObject {
+    NSLog(@"Going to create a strong ARCObject");
+    self.object = [ARCObject new];
+}
+
+- (void)createAndSetWeakARCObject {
+    NSLog(@"Going to create a weak ARCObject");
+    self.weakObject = [ARCObject new];
+}
+
 @end

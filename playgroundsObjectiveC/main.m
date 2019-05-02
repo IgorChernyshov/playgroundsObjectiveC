@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Properties.h"
+#import "ARCObject.h"
 
 // MARK: - Methods declarations
 
@@ -18,11 +19,11 @@ void castFloatToInt(void);
 
 // conditionalOperators.m
 enum Operator {
-  Plus,
-  Minus,
-  Multiply,
-  Divide,
-  Mod
+    Plus,
+    Minus,
+    Multiply,
+    Divide,
+    Mod
 };
 typedef enum Operator Operator;
 
@@ -37,23 +38,43 @@ void pointersAndValues(void);
 void forLoops(void);
 
 int main(int argc, const char * argv[]) {
-  @autoreleasepool {
-    //declareVariables();
-    //declareConst();
-    //castFloatToInt();
-    //float sum = calculate(10, Plus, 15);
-    //NSLog(@"%f", sum);
-    //float divide = calculate(12345, Divide, 23);
-    //NSLog(@"%f", divide);
-    //compareTwoStrings(@"String", @"String");
-    //createArrays();
-    //createDictionaries();
-    //createSets();
-    //pointersAndValues();
-    //forLoops();
-    Properties *testingProperties = [Properties new];
-    testingProperties.name = @"Igor";
-    NSLog(@"%@", testingProperties.name);
-  }
-  return 0;
+    @autoreleasepool {
+        //declareVariables();
+        //declareConst();
+        //castFloatToInt();
+        
+        //float sum = calculate(10, Plus, 15);
+        //NSLog(@"%f", sum);
+        //float divide = calculate(12345, Divide, 23);
+        //NSLog(@"%f", divide);
+        
+        //compareTwoStrings(@"String", @"String");
+        
+        //createArrays();
+        //createDictionaries();
+        //createSets();
+        
+        //pointersAndValues();
+        
+        //forLoops();
+        
+        //Properties *testingProperties = [Properties new];
+        //testingProperties.name = @"Igor";
+        //NSLog(@"%@", testingProperties.name);
+        
+        //NSLog(@"Creating propertiesHolder...");
+        //Properties *propertiesHolder = [Properties new];
+        //NSLog(@"Sending a message createAndSetARCObject to propertiesHolder...");
+        //[propertiesHolder createAndSetARCObject];
+        //NSLog(@"Destroying propertiesHolder...");
+        //propertiesHolder = nil;
+        
+        //NSLog(@"Creating propertiesHolder...");
+        //propertiesHolder = [Properties new];
+        //NSLog(@"Sending a message createAndSetWeakARCObject to propertiesHolder...");
+        //[propertiesHolder createAndSetWeakARCObject];
+        //NSLog(@"Destroying propertiesHolder...");
+        //propertiesHolder = nil;
+    }
+    return 0;
 }
