@@ -43,6 +43,10 @@ void captureReferenceBlock(void);
 void capturePrimitivesReferenceBlock(void);
 void createSeveralBlocks(void);
 
+// queues.m
+void dispatchGroups(void);
+void barrier(void);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //declareVariables();
@@ -81,10 +85,16 @@ int main(int argc, const char * argv[]) {
         //[propertiesHolder createAndSetWeakARCObject];
         //NSLog(@"Destroying propertiesHolder...");
         //propertiesHolder = nil;
-        captureValueBlock();
-        capturePrimitivesReferenceBlock();
-        captureReferenceBlock();
-        createSeveralBlocks();
+        
+        //captureValueBlock();
+        //capturePrimitivesReferenceBlock();
+        //captureReferenceBlock();
+        //createSeveralBlocks();
+        
+        //dispatchGroups();
+        //barrier();
+        
+        
     }
     return 0;
 }

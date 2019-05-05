@@ -15,6 +15,7 @@
 		9C22CF482278A58300E5A3D6 /* ARCObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CF472278A58300E5A3D6 /* ARCObject.m */; };
 		9C22CF4A227AE86900E5A3D6 /* blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CF49227AE86900E5A3D6 /* blocks.m */; };
 		9C22CF4D227AF94E00E5A3D6 /* IntegerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CF4C227AF94E00E5A3D6 /* IntegerObject.m */; };
+		9CA87C74227D6A0500D30B75 /* queues.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA87C73227D6A0500D30B75 /* queues.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9C22CF49227AE86900E5A3D6 /* blocks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blocks.m; sourceTree = "<group>"; };
 		9C22CF4B227AF94E00E5A3D6 /* IntegerObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerObject.h; sourceTree = "<group>"; };
 		9C22CF4C227AF94E00E5A3D6 /* IntegerObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegerObject.m; sourceTree = "<group>"; };
+		9CA87C73227D6A0500D30B75 /* queues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = queues.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				9C22CEFA2272256400E5A3D6 /* main.m */,
 				9C22CF0C2277118100E5A3D6 /* Properties.h */,
 				9C22CF0D2277118100E5A3D6 /* Properties.m */,
+				9CA87C73227D6A0500D30B75 /* queues.m */,
 				9C22CF0F22773AF600E5A3D6 /* SampleProtocol.h */,
 				9C22CF042274438800E5A3D6 /* variables.m */,
 			);
@@ -155,6 +158,7 @@
 				9C22CF4A227AE86900E5A3D6 /* blocks.m in Sources */,
 				9C22CF0B2274844400E5A3D6 /* loopsAndStructures.m in Sources */,
 				9C22CF4D227AF94E00E5A3D6 /* IntegerObject.m in Sources */,
+				9CA87C74227D6A0500D30B75 /* queues.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
