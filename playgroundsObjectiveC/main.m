@@ -16,6 +16,9 @@
 void declareVariables(void);
 void declareConst(void);
 void castFloatToInt(void);
+void advancedVariables(void);
+void checkSizeOfTypes(void);
+void idClassAndSel(void);
 
 // conditionalOperators.m
 enum Operator {
@@ -94,7 +97,9 @@ int main(int argc, const char * argv[]) {
         //dispatchGroups();
         //barrier();
         
-        
+        //advancedVariables();
+        //checkSizeOfTypes();
+        idClassAndSel();
     }
     return 0;
 }
