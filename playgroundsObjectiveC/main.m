@@ -21,14 +21,13 @@ void checkSizeOfTypes(void);
 void idClassAndSel(void);
 
 // conditionalOperators.m
-enum Operator {
+typedef enum {
     Plus,
     Minus,
     Multiply,
     Divide,
     Mod
-};
-typedef enum Operator Operator;
+} Operator;
 
 float calculate(NSInteger number1, Operator operator, NSInteger number2);
 void compareTwoStrings(NSString *firstString, NSString *secondString);
@@ -37,7 +36,7 @@ void compareTwoStrings(NSString *firstString, NSString *secondString);
 void createArrays(void);
 void createDictionaries(void);
 NSArray* sortedDictionaryKeys(void);
-NSSet* filteredDictionaryKeys()
+NSSet* filteredDictionaryKeys(void);
 void createSets(void);
 void pointersAndValues(void);
 void forLoops(void);

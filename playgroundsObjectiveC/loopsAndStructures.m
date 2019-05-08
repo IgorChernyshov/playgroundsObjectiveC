@@ -167,12 +167,11 @@ void pointersAndValues()
 // MARK: - Structures
 
 // Structs
-struct Coordinate {
+typedef struct {
     float x;
     float y;
     float z;
-};
-typedef struct Coordinate Coordinate;
+} Coordinate;
 
 /*
  Coordinate coordinate;
@@ -184,12 +183,11 @@ typedef struct Coordinate Coordinate;
  */
 
 // Enums
-enum Color {
+typedef enum {
     Red,
     Green,
     Blue
-};
-typedef enum Color Color;
+} Color;
 
 /*
  Color color = Blue;
@@ -198,12 +196,11 @@ typedef enum Color Color;
  }
  */
 
-enum Speed {
+typedef enum : NSInteger {
     LowSpeed = 1,
     NormalSpeed = 2,
     HighSpeed = 3
-};
-typedef NSInteger Speed;
+} Speed;
 
 /*
  Speed speedLevel = LowSpeed;
