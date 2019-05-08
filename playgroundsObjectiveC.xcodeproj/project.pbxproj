@@ -16,6 +16,7 @@
 		9C22CF4A227AE86900E5A3D6 /* blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CF49227AE86900E5A3D6 /* blocks.m */; };
 		9C22CF4D227AF94E00E5A3D6 /* IntegerObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C22CF4C227AF94E00E5A3D6 /* IntegerObject.m */; };
 		9CA87C74227D6A0500D30B75 /* queues.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA87C73227D6A0500D30B75 /* queues.m */; };
+		9CAC6A2B2282FDF3002861C6 /* weakCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC6A2A2282FDF3002861C6 /* weakCollections.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -45,6 +46,7 @@
 		9C22CF4B227AF94E00E5A3D6 /* IntegerObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntegerObject.h; sourceTree = "<group>"; };
 		9C22CF4C227AF94E00E5A3D6 /* IntegerObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntegerObject.m; sourceTree = "<group>"; };
 		9CA87C73227D6A0500D30B75 /* queues.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = queues.m; sourceTree = "<group>"; };
+		9CAC6A2A2282FDF3002861C6 /* weakCollections.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = weakCollections.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				9CA87C73227D6A0500D30B75 /* queues.m */,
 				9C22CF0F22773AF600E5A3D6 /* SampleProtocol.h */,
 				9C22CF042274438800E5A3D6 /* variables.m */,
+				9CAC6A2A2282FDF3002861C6 /* weakCollections.m */,
 			);
 			path = playgroundsObjectiveC;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				9C22CEFB2272256400E5A3D6 /* main.m in Sources */,
 				9C22CF482278A58300E5A3D6 /* ARCObject.m in Sources */,
 				9C22CF0922746AE800E5A3D6 /* conditionalOperators.m in Sources */,
+				9CAC6A2B2282FDF3002861C6 /* weakCollections.m in Sources */,
 				9C22CF052274438800E5A3D6 /* variables.m in Sources */,
 				9C22CF0E2277118100E5A3D6 /* Properties.m in Sources */,
 				9C22CF4A227AE86900E5A3D6 /* blocks.m in Sources */,
