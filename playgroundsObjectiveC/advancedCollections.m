@@ -1,5 +1,5 @@
 //
-//  weakCollections.m
+//  advancedCollections.m
 //  playgroundsObjectiveC
 //
 //  Created by Igor Chernyshov on 08/05/2019.
@@ -67,4 +67,43 @@ void createMapTable()
     [mapTable setObject:string2 forKey:@"string2"];
     
     NSLog(@"%@", mapTable);
+}
+
+
+/**
+ NSOrderedSet is kind of combo NSArray + NSSet.
+ This means fast "includes" checks like in NSSet and ordering methods like in NSArray.
+ Works as slow as NSArray & NSSet together, because it has to maintain hash table and indexes at the same time.
+ Can be created from an array / set and converted back into them.
+ NSMutableOrderedSet exists.
+ */
+void createOrderedSet()
+{
+    NSOrderedSet *orderedSet = [NSOrderedSet orderedSetWithObjects:@20, @30, @10, @45, @1, @30, nil];
+    NSLog(@"%@", orderedSet);
+    NSLog(@"%@", [orderedSet objectAtIndex:3]);
+}
+
+
+/**
+ Inheirts from NSMutableSet.
+ Acts as a set but each object has a counter that displays how many times the object was added to a set.
+ Can be initiated with a set or an array.
+ */
+void createCountedSet()
+{
+    NSCountedSet *countedSet = [NSCountedSet setWithArray:@[@20, @30, @10, @45, @1, @30]];
+    NSLog(@"Total number of elements = %lu", (unsigned long)[countedSet count]);
+    NSLog(@"%lu", (unsigned long)[countedSet countForObject:@30]);
+}
+
+/**
+ Immutable, has a mutable analogue NSMutableIndexSet.
+ Slighlty faster than an NSSet.
+ Works great to save unsigned integers.
+ */
+void createIndexSet()
+{
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(4, 5)];
+    NSLog(@"%@", indexSet);
 }

@@ -51,10 +51,13 @@ void createSeveralBlocks(void);
 void dispatchGroups(void);
 void barrier(void);
 
-// weakCollections.m
+// advancedCollections.m
 void createPointerArray(void);
 void createHashTable(void);
 void createMapTable(void);
+void createOrderedSet(void);
+void createCountedSet(void);
+void createIndexSet(void);
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -108,9 +111,13 @@ int main(int argc, const char * argv[]) {
         //advancedVariables();
         //checkSizeOfTypes();
         //idClassAndSel();
+        
         //createPointerArray();
         //createHashTable();
-        createMapTable();
+        //createMapTable();
+        //createOrderedSet();
+        //createCountedSet();
+        createIndexSet();
     }
     return 0;
 }
