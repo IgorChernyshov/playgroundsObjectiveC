@@ -36,6 +36,8 @@ void compareTwoStrings(NSString *firstString, NSString *secondString);
 // loopsAndStructures.m
 void createArrays(void);
 void createDictionaries(void);
+NSArray* sortedDictionaryKeys(void);
+NSSet* filteredDictionaryKeys()
 void createSets(void);
 void pointersAndValues(void);
 void forLoops(void);
@@ -65,6 +67,8 @@ int main(int argc, const char * argv[]) {
         
         //createArrays();
         //createDictionaries();
+        //NSArray *carsInStock = sortedDictionaryKeys();
+        //NSLog(@"%@", carsInStock);
         //createSets();
         
         //pointersAndValues();
@@ -99,7 +103,7 @@ int main(int argc, const char * argv[]) {
         
         //advancedVariables();
         //checkSizeOfTypes();
-        idClassAndSel();
+        //idClassAndSel();
     }
     return 0;
 }
