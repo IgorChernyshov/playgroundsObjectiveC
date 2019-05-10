@@ -58,3 +58,33 @@ void createSeveralBlocks()
     [blocksBuilder createNonRetainCycleBlock];
     [blocksBuilder createBlockAsObject];
 }
+
+void createAndRunGlobalBlock()
+{
+    void(^globalBlock)(void) = ^{
+        NSLog(@"Hello! This is Global Block speaking");
+    };
+    globalBlock();
+}
+
+void createAndRunBlockInStack()
+{
+    int x = 4;
+    ^{
+        int squareX = x * x;
+        NSLog(@"%d", squareX);
+    }();
+}
+
+void createAndRunHeapBlock()
+{
+    int a = 5;
+    void (^heapBlock)(void) = ^{
+        int t = a + 1;
+        int (^stackBlock)(void) = [^{
+            return t + 1;
+        } copy];
+        NSLog(@"%@", [stackBlock class]);
+    };
+    heapBlock();
+}

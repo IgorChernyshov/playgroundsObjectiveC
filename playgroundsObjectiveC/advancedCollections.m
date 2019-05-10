@@ -69,7 +69,6 @@ void createMapTable()
     NSLog(@"%@", mapTable);
 }
 
-
 /**
  NSOrderedSet is kind of combo NSArray + NSSet.
  This means fast "includes" checks like in NSSet and ordering methods like in NSArray.
@@ -83,7 +82,6 @@ void createOrderedSet()
     NSLog(@"%@", orderedSet);
     NSLog(@"%@", [orderedSet objectAtIndex:3]);
 }
-
 
 /**
  Inheirts from NSMutableSet.

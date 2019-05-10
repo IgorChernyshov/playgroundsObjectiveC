@@ -46,6 +46,9 @@ void captureValueBlock(void);
 void captureReferenceBlock(void);
 void capturePrimitivesReferenceBlock(void);
 void createSeveralBlocks(void);
+void createAndRunGlobalBlock(void);
+void createAndRunBlockInStack(void);
+void createAndRunHeapBlock(void);
 
 // queues.m
 void dispatchGroups(void);
@@ -104,6 +107,9 @@ int main(int argc, const char * argv[]) {
         //capturePrimitivesReferenceBlock();
         //captureReferenceBlock();
         //createSeveralBlocks();
+        //createAndRunGlobalBlock();
+        //createAndRunBlockInStack();
+        //createAndRunHeapBlock();
         
         //dispatchGroups();
         //barrier();
@@ -117,7 +123,7 @@ int main(int argc, const char * argv[]) {
         //createMapTable();
         //createOrderedSet();
         //createCountedSet();
-        createIndexSet();
+        //createIndexSet();
     }
     return 0;
 }
