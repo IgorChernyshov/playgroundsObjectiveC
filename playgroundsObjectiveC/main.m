@@ -62,6 +62,10 @@ void createOrderedSet(void);
 void createCountedSet(void);
 void createIndexSet(void);
 
+// memoryManagement.m
+void recursiveStackOverflowMethod(void);
+void createObjectOnHeap(void);
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         //declareVariables();
@@ -124,6 +128,9 @@ int main(int argc, const char * argv[]) {
         //createOrderedSet();
         //createCountedSet();
         //createIndexSet();
+        
+        //recursiveStackOverflowMethod();
+        createObjectOnHeap();
     }
     return 0;
 }
