@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Properties.h"
 #import "ARCObject.h"
+#import "Person.h"
+#import "Man.h"
 
 // MARK: - Methods declarations
 
@@ -130,7 +132,12 @@ int main(int argc, const char * argv[]) {
         //createIndexSet();
         
         //recursiveStackOverflowMethod();
-        createObjectOnHeap();
+        //createObjectOnHeap();
+        
+        //NSObject *object = [NSObject new];
+        //Person *person = [Person new];
+        Man *man = [Man new];
+        NSLog(@"%@", [man someString]);
     }
     return 0;
 }
